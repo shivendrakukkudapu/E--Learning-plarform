@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Theme : Online Education
 
 ## Project Title : Education Made Easy (E2)
@@ -9,3 +10,6 @@ This code sample is about an educational website that is made for students from 
 You can refer the report below for more information about the website: [Report](https://docs.google.com/document/d/1UjCyweoSUYMcqKPKuW0UIjZMdmz8QdM_GDiEm4pYA1s/edit?usp=sharing)
 
 You can watch this video for short explanation about the video: [Youtube video](https://youtu.be/BBGbONOGJHA?t=7)
+=======
+
+>>>>>>> 71d5d69a5efd556d13e2759e86faa6e5df173159
