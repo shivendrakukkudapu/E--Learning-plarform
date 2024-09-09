@@ -1,0 +1,29 @@
+<%- include("partials/header1"); -%>
+<div id="checkbox-container">
+   <form class="" action="/videolec" method="post">
+   <label><input type="checkbox" name="cbx" id="option1" value="option1" autocomplete="off"> Option 1</label>
+   <label><input type="checkbox" name="cbx" id="option2" value="option1" autocomplete="off">  Option 2</label>
+  <label><input type="checkbox" name="cbx" id="option3" value="option1" autocomplete="off">  Option 3</label>
+  <button type="submit" class="btnvideo">Submit</button> 
+   </form>
+</div>
+
+<script>
+    var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
+	$checkboxes = $("#checkbox-container :checkbox");
+	
+	$checkboxes.on("change", function(){
+	    $checkboxes.each(function(){
+		    checkboxValues[this.id] = this.checked;
+		});
+		
+		localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues))
+	});
+	
+	$.each(checkboxValues, function(key, value){
+	    $("#" + key).prop('checked', value);
+	});
+</script>
+
+
+<%- include("partials/footer1"); -%>

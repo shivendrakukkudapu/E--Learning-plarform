@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Notification</title>
+  <link rel="stylesheet" href="/css/notification.css">
+</head>
+
+<body>
+    <div class="box" id="heading">
+    <h1>Notifications</h1>
+  </div>
+    <%  notification.forEach(function(item){ %>
+  <div class="box">
+     <div class="item">
+	    <pre><%=item.notification%>                                                              <span style="font-size: 15px;"><%=item.time.substring(0, 25) %></span></pre>
+	 </div>
+  </div>
+   <%  }) %>
+</body>
+
+</html>

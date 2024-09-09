@@ -1,0 +1,124 @@
+<%- include("partials/header1"); -%>
+<h1>Number of times <%= points %></h1>
+<%  modules.forEach(function(post){ %>
+<h1>Result of quiz for <%= post.module %> is <%= post.quizresult %></h1>
+ <% }) %>
+<h1>Rank is <%= ranksss %></h1>
+<%  students.forEach(function(post){ %>
+<h1>Rank is <%= post._id %> and rank is <%= post.username %></h1>
+ <% }) %> 
+<div class="dashboardheading">
+<h1>Welcome <%= username %></h1>
+</div>
+
+<section id="videolec">
+    <div class="containerdashboard">
+	    <div class="row">
+		    <div class="col-lg-6">
+			    <div class="videolecheading">
+				    <p>Video Lectures</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+			    <div class="videolec">
+				   <p>Complex Numbers</p>
+				   <p>Integration</p>
+				   <p>Probability</p>
+				   <p>Differentiation</p>
+				   <p>Trigonometric</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="books">
+    <div class="containerdashboard">
+	    <div class="row">
+		    <div class="col-lg-6">
+			    <div class="videolecheading">
+				    <p>Books</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+			  <div class="videolec">
+				   <p>Complex Numbers</p>
+				   <p>Integration</p>
+				   <p>Probability</p>
+				   <p>Differentiation</p>
+				   <p>Trigonometric</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="formulasheets">
+    <div class="containerdashboard">
+	    <div class="row">
+		    <div class="col-lg-6">
+			    <div class="videolecheading">
+				    <p>Formula sheets</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+			  <div class="videolec">
+				   <p>Complex Numbers</p>
+				   <p>Integration</p>
+				   <p>Probability</p>
+				   <p>Differentiation</p>
+				   <p>Trigonometric</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="quiz">
+    <div class="containerdashboard-graph">
+	  <div class="graphbar">
+	    <ul class="numbers">
+		    <li><span>100%</span></li>
+			<li><span>50%</span></li>
+			<li><span>0%</span></li>
+		</ul>
+		<ul class="bars">
+			<%  modules.forEach(function(post){ %>
+                <li><div class="bar" data-percentage="<%= (post.quizresult/2*100) %>"></div><span><%= post.module %></span></li>
+             <% }) %>  
+		</ul>
+	  </div>
+	</div>
+	<script type="text/javascript">
+	$(function(){
+	    $('.bars li .bar').each(function(key, bar){
+		    var percentage = $(this).data('percentage');
+			$(this).animate({
+			 'height': percentage + '%'
+			},1000);
+		});
+	});
+	</script>
+</section>
+
+<section id="survey">
+    <div class="containerdashboard">
+	    <div class="row">
+		    <div class="col-lg-6">
+			    <div class="videolecheading">
+				    <p>Survey's</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+			  <div class="quizssss">
+				   <p><a href="#">Complex Numbers</a></p>
+				   <p><a href="#">Integration</a></p>
+				   <p><a href="#">Probability</a></p>
+				   <p><a href="#">Differentiation</a></p>
+				   <p><a href="#">Trigonometric</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<%- include("partials/footer1"); -%>

@@ -1,0 +1,90 @@
+.tooltip{
+  font-size: 20px;
+}
+body{
+  background-color: #ffe6e6;
+}
+.navbar {
+  background: #b088f9;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0 0 20px 0;
+}
+.pro{
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+.dash{
+  font-size: 2rem;
+}
+.navbar-brand{
+  padding-bottom: 0px;
+    padding-top: 0px;
+    margin-left: 80px;
+    height: 75px;
+}
+.w3-sidebar{
+  background-color: #bedcfa!important;
+}
+h2{
+  margin-left: 80px;
+}
+#statistics .row{
+  padding: 2%;
+  margin-left: 80px;
+}
+#statistics .col-md-4{
+  box-shadow: 0 0 30px grey;
+  border-radius: 15px;
+  height: 200px;
+  width: 350px;
+  margin: 10px;
+  background-color: #fff;
+}
+#subjects .row{
+  margin-left: 80px;
+}
+#subjects .chemistry{
+  background-color: #38BEFD;
+}
+
+#subjects .physics{
+  background-color: #3D2CE8;
+}
+#subjects .maths{
+  background-color: #FDB909;
+}
+#subjects .maths , #subjects .physics , #subjects .chemistry {
+  border-radius: 25px;
+  padding: 3rem;
+  margin: 2rem;
+  box-shadow: 0 0 30px grey;
+}
+#subjects img{
+  width: 90%;
+}
+.physics .btn , .chemistry .btn , .maths .btn{
+  position:static;
+ transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ background-color: #fff;
+ color: black;
+ font-size: 16px;
+ padding: 12px 24px;
+ border: none;
+ cursor: pointer;
+ border-radius: 5px;
+ text-align: center;
+ margin-left: 50%;
+ margin-top: 20%;
+}
+.physics .btn:hover , .chemistry .btn:hover , .maths .btn:hover{
+background-color: #a685e2;
+color: #fff;
+}
+@media (max-width:1028px){
+  .navbar{
+    text-align: center;
+  }
+}

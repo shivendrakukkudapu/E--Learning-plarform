@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/css/quiz2.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="quiz2.js"></script>
+</head>
+
+<script src= "https://code.jquery.com/jquery-3.5.1.js"> </script>
+
+<body>
+
+   
+<div class="head">
+    <div class="navbar">
+        <p class="head-quiz" style="margin-top: 5px; margin-left: 660px;margin-bottom: 5px;color: white;">Quiz Time !!! <p style="padding-top: 10px; margin-right: 200px; margin-left: 630px;color: white;">Don't Give Up You Can Do It. All The Best 😄</p></p>
+        
+
+        <!-- Button trigger modal -->
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" style="margin-right: 680px;
+    margin-top: 150px; margin-left: 720px;">
+        Module 1
+      </button>
+      
+     
+
+      <!-- Modal -->
+	  <form action="/module4">
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle" style="text-align: center;">Permutation and Combination</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form class="" action="/quiz" method="post">
+                <div class="popup">
+                 <div class="popup-content">
+                     <!-------------Questions Starts -->
+                 <p>1. Out of 7 consonants and 4 vowels, how many words of 3 consonants and 2 vowels can be formed?</p>
+                
+                    <p><input type="radio" name="question1" value="25200" style="margin-right: 10px;">A. 25200</p>
+                    <p><input type="radio" name="question1" value="21300" style="margin-right: 10px;">B. 21300</p>
+                    <p><input type="radio" name="question1" value="24000" style="margin-right: 10px;">C. 24000</p>
+                    <p><input type="radio" name="question1" value="210" style="margin-right: 10px;">D. 210</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question1r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>A. 25200</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p>Number of ways of selecting 3 consonants from 7
+                            = ⁷C₃
+                            Number of ways of selecting 2 vowels from 4
+                            = ⁴C₂
+                            Number of ways of selecting 3 consonants from 7 and 2 vowels from 4
+                            = ⁷C₃ × ⁴C₂
+                            = (7 × 6 × 5/3 × 2 × 1)x(4 × 3/2 × 1) 
+                            = 210.
+                            
+                            It means we can have 210 groups where each group contains total 5 letters (3 consonants and 2 vowels).
+                            
+                            Number of ways of arranging 5 letters among themselves
+                            = 5! = 5 × 4 × 3 × 2 × 1 = 120
+                            
+                            Hence, required number of ways
+                            = 210 × 120 = 25200
+                            </p>
+                    </p>
+
+
+                <p>2. In a group of 6 boys and 4 girls, four children are to be selected. In how many different ways can they be selected such that at least one boy should be there?</p>
+                
+                    <p><input type="radio" name="question2" value="212" style="margin-right: 10px;">A. 212</p>
+                    <p><input type="radio" name="question2" value="209" style="margin-right: 10px;">B. 209</p>
+                    <p><input type="radio" name="question2" value="159" style="margin-right: 10px;">C. 159</p>
+                    <p><input type="radio" name="question1" value="201" style="margin-right: 10px;">D. 201</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question2r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>B. 209</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p>In a group of 6 boys and 4 girls, four children are to be selected such that at least one boy should be there.
+                            Hence we have 4 options as given below
+                            We can select 4 boys ...(option 1)
+                            Number of ways to this = ⁶C₄
+                            We can select 3 boys and 1 girl ...(option 2)
+                            Number of ways to this = ⁶C₃ × ⁴C₁
+                            
+                            We can select 2 boys and 2 girls ...(option 3)
+                            Number of ways to this = ⁶C₂ × ⁴C₂
+                            
+                            We can select 1 boy and 3 girls ...(option 4)
+                            Number of ways to this = ⁶C₁ × ⁴C₃
+                            
+                            Total number of ways
+                            = ⁶C₄ + ⁶C₃ × ⁴C₁ + ⁶C₂ × ⁴C₂ + ⁶C₁ × ⁴C₃
+                            = ⁶C₂ + ⁶C₃ × ⁴C₁ + ⁶C₂ × ⁴C₂ + ⁶C₁ × ⁴C₁[∵ ⁿCᵣ = ⁿC₍ₙ₋ᵣ₎]
+                            
+                            = ( 6 × 5)/(2 × 1) + ((6 × 5 × 4)/(3 × 2 × 1) × 4) + ((6 × 5)/(2 × 1)) × ((4 × 3)/(2 × 1)) + (6 × 4)
+                            = 15 + 80 + 90 + 24 = 209
+                            </p>
+                    </p>
+
+                <p>3. In how many different ways can the letters of the word 'OPTICAL' be arranged so that the vowels always come together?</p>
+                
+                    <p><input type="radio" name="question2" value="920" style="margin-right: 10px;">A. 920</p>
+                    <p><input type="radio" name="question2" value="825" style="margin-right: 10px;">B. 825</p>
+                    <p><input type="radio" name="question2" value="720" style="margin-right: 10px;">C. 720</p>
+                    <p><input type="radio" name="question1" value="610" style="margin-right: 10px;">D. 610</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question3r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>C. 720</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p>
+                            The word 'OPTICAL' has 7 letters. It has the vowels 'O','I','A' in it and these 3 vowels should always come together. Hence these three vowels can be grouped and considered as a single letter. That is, PTCL(OIA).
+
+                                Hence we can assume total letters as 5 and all these letters are different.
+                                Number of ways to arrange these letters
+                                = 5!
+                                = 5 × 4 × 3 × 2 × 1 = 120
+                               
+                                All the 3 vowels (OIA) are different
+                                Number of ways to arrange these vowels among themselves
+                                = 3!
+                                = 3 × 2 × 1 = 6
+                               
+                                Hence, required number of ways
+                                =
+                                120
+                                ×
+                                6
+                                =
+                                720
+
+                        </p>
+                    
+
+                <p>4. In how many different ways can the letters of the word 'CORPORATION' be arranged so that the vowels always come together?</p>
+                
+                    <p><input type="radio" name="question2" value="42000" style="margin-right: 10px;">A. 42000</p>
+                    <p><input type="radio" name="question2" value="48000" style="margin-right: 10px;">B. 48000</p>
+                    <p><input type="radio" name="question2" value="50400" style="margin-right: 10px;">C. 50400</p>
+                    <p><input type="radio" name="question1" value="47200" style="margin-right: 10px;">D. 47200</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question4r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>C. 50400</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p>
+                            The word 'CORPORATION' has 11 letters. It has the vowels 'O','O','A','I','O' in it and these 5 vowels should always come together. Hence these 5 vowels can be grouped and considered as a single letter. that is, CRPRTN(OOAIO).
+
+                            Hence we can assume total letters as 7. But in these 7 letters, 'R' occurs 2 times and rest of the letters are different.
+
+                            Number of ways to arrange these letters
+                            = (7!)/(2!)            
+                            = (7 × 6 × 5 × 4 × 3 × 2 × 1)/(2 × 1)                        
+                            = 2520                          
+
+                            In the 5 vowels (OOAIO), 'O' occurs 3 and rest of the vowels are different.
+
+                            Number of ways to arrange these vowels among themselves 
+                            = (5! / 3!)
+                            = (5 × 4 × 3 × 2 × 1)/(3 × 2 × 1) = 20
+                            
+                            Hence, required number of ways
+                            = 2520 × 20 = 50400
+
+                        </p>
+
+                <p>5. In how many ways can a group of 5 men and 2 women be made out of a total of 7 men and 3 women?</p>
+                
+                    <p><input type="radio" name="question2" value="64" style="margin-right: 10px;">A. 64</p>
+                    <p><input type="radio" name="question2" value="1" style="margin-right: 10px;">B. 1</p>
+                    <p><input type="radio" name="question2" value="63" style="margin-right: 10px;">C. 63</p>
+                    <p><input type="radio" name="question1" value="126" style="margin-right: 10px;">D. 126</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question5r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>C. 63</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p>
+                            We need to select 5 men from 7 men and 2 women from 3 women.
+
+                                Number of ways to do this
+                                = ⁷C₅ × ³C₂
+                                = ⁷C₂ × ³C₁ [∵ ⁿCᵣ = ⁿC₍ₙ₋ᵣ₎]
+                                = ((7 × 6)/(2 × 1)) × 3
+                                = 21 × 3 = 63
+                        </p>
+
+                <p>6. In how many different ways can the letters of the word 'MATHEMATICS' be arranged such that the vowels must always come together?</p>
+                
+                    <p><input type="radio" name="question2" value="1000200" style="margin-right: 10px;">A. 1000200</p>
+                    <p><input type="radio" name="question2" value="140020" style="margin-right: 10px;">B. 140020</p>
+                    <p><input type="radio" name="question2" value="9800" style="margin-right: 10px;">C. 9800</p>
+                    <p><input type="radio" name="question1" value="120960" style="margin-right: 10px;">D. 120960</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question6r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>D. 120960</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p>
+                            The word 'MATHEMATICS' has 11 letters. It has the vowels 'A','E','A','I' in it and these 4 vowels must always come together. Hence these 4 vowels can be grouped and considered as a single letter. That is, MTHMTCS(AEAI).
+
+                            Hence we can assume total letters as 8. But in these 8 letters, 'M' occurs 2 times, 'T' occurs 2 times but rest of the letters are different.
+
+                            Hence,number of ways to arrange these letters
+                                        = (8!)/(2!)(2!)
+                                        = ((8 × 7 × 6 × 5 × 4 × 3 × 2 × 1)/(2 × 1)(2 × 1))
+                                        = 10080                                       
+
+
+                                        In the 4 vowels (AEAI), 'A' occurs 2 times and rest of the vowels are different.
+                                        Number of ways to arrange these vowels among themselves 
+                                        = (4!/2!)
+                                        = ((4 × 3 × 2 × 1)/(2 × 1))
+                                        = 12
+                                        Hence, required number of ways
+                                        = 10080 × 12 = 120960
+                        </p>
+
+                <p>7. There are 8 men and 10 women and you need to form a committee of 5 men and 6 women. In how many ways can the committee be formed?</p>
+                
+                    <p><input type="radio" name="question2" value="11" style="margin-right: 10px;">A. 11</p>
+                    <p><input type="radio" name="question2" value="11760" style="margin-right: 10px;">B. 11760</p>
+                    <p><input type="radio" name="question2" value="10420" style="margin-right: 10px;">C. 10420</p>
+                    <p><input type="radio" name="question1" value="None of these" style="margin-right: 10px;">D. None of these</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question7r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>B. 11760</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p>
+                            We need to select 5 men from 8 men and 6 women from 10 women
+
+                                        Number of ways to do this
+                                        = ⁸C₅ × ¹⁰C₆
+                                        = ⁸C3 × ¹⁰C₄ [∵ ⁿCᵣ = ⁿC₍ₙ₋ᵣ₎]
+                                        = ((8 × 7 × 6)/(3 × 2 × 1)) ((10 × 9 × 8 × 7)/(4 × 3 × 2 ×1))                                        (
+                                        = 56 × 210
+                                        = 11760
+                        </p>
+
+                <p>8. How many 3-letter words with or without meaning, can be formed out of the letters of the word, 'LOGARITHMS', if repetition of letters is not allowed?</p>
+                
+                    <p><input type="radio" name="question2" value="5040" style="margin-right: 10px;">A. 5040</p>
+                    <p><input type="radio" name="question2" value="720" style="margin-right: 10px;">B. 720</p>
+                    <p><input type="radio" name="question2" value="420" style="margin-right: 10px;">C. 420</p>
+                    <p><input type="radio" name="question1" value="None of these" style="margin-right: 10px;">D. None of these</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question8r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>B. 720</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p>
+                            The word 'LOGARITHMS' has 10 different letters.
+                            Hence, the number of 3-letter words(with or without meaning) formed by using these letters
+                            = ¹⁰P₃
+                            = 10 × 9 × 8 = 720
+                        </p>
+
+                <p>9. A coin is tossed 3 times. Find out the number of possible outcomes.</p>
+
+                    <p><input type="radio" name="question2" value="None of these" style="margin-right: 10px;">A. None of these</p>
+                    <p><input type="radio" name="question2" value="2" style="margin-right: 10px;">B. 2</p>
+                    <p><input type="radio" name="question2" value="8" style="margin-right: 10px;">C. 8</p>
+                    <p><input type="radio" name="question1" value="1" style="margin-right: 10px;">D. 1</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question9r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>C. 8</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p>
+                            When a coin is tossed once, there are two possible outcomes: Head(H) and Tale(T)
+
+                            Hence, when a coin is tossed 3 times, the number of possible outcomes
+                            = 2 × 2 × 2 = 8
+                            
+                            (The possible outcomes are HHH, HHT, HTH, HTT, THH, THT, TTH, TTT )
+                        </p>
+
+                <p>10. In how many different ways can the letters of the word 'DETAIL' be arranged such that the vowels must occupy only the odd positions?</p>
+                
+                    <p><input type="radio" name="question2" value="36" style="margin-right: 10px;">A. 36</p>
+                    <p><input type="radio" name="question2" value="None of these" style="margin-right: 10px;">B. None of these</p>
+                    <p><input type="radio" name="question2" value="64" style="margin-right: 10px;">C. 64</p>
+                    <p><input type="radio" name="question1" value="120" style="margin-right: 10px;">D. 120</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question10r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>A. 36</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p>
+                            The word 'DETAIL' has 6 letters which has 3 vowels (EAI) and 3 consonants(DTL)
+                            The 3 vowels(EAI) must occupy only the odd positions. Let's mark the positions as (1) (2) (3) (4) (5) (6). Now, the 3 vowels should only occupy the 3 positions marked as (1),(3) and (5) in any order.
+                            Hence, number of ways to arrange these vowels
+                                = ³P₃
+                                = 3! = 3 × 2 × 1 = 6
+                                
+                                Now we have 3 consonants(DTL) which can be arranged in the remaining 3 positions in any order. Hence, number of ways to arrange these consonants
+                                = ³P₃
+                                = 3! = 3 × 2 × 1 = 6
+                            
+                                Total number of ways
+                                = number of ways to arrange the vowels × number of ways to arrange the consonants
+                                = 6 × 6 = 36
+                        </p>
+                    
+                    <!----questions ends-->
+              </form>
+        </div>
+        <div class="modal-footer">
+         
+          <button type="submit" class="btn btn-primary">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+
+  <!---------------------Modal 2 starts-->
+  <!---<div class="head">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+      Module 2
+    </button>-->
+    
+    <!-- Modal -->
+    <!---<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>--->
+      <!------------Modal 2 ends-->
+    
+    
+
+  </div>
+
+  <!-- Button trigger modal -->
+
+
+    </div>
+    
+
+    
+
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

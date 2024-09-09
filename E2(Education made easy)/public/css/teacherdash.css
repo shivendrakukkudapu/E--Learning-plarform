@@ -1,0 +1,32 @@
+
+html{
+  min-height: 100%;
+  position: relative;
+}
+
+body{
+	background-color: rgb(136,100,226);
+
+}
+.table-hover{
+  color: #fff;
+}
+.table-hover a{
+  color: #fff;
+}
+
+footer,#contact {
+  text-align: center;
+  padding: 2% 15%;
+  background-color: #6155a6;
+  color: #fff;
+  bottom: 0;
+  position: bottom;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  padding-bottom: 100px;
+
+}

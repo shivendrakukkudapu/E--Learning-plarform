@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Module 4</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/module4.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="dashboard-block">
+    <div class="w3-sidebar w3-bar-block w3-sand w3-xxlarge" style="width:70px">
+      <a href="/dashboard" class="w3-bar-item w3-button" data-toggle="tooltip" title="Dashboard"><i class="fa fa-home"></i></a>
+      <a href="#" class="w3-bar-item w3-button" data-toggle="tooltip" title="Timetable"><i class="fa fa-table"></i></a>
+      <a href="#" class="w3-bar-item w3-button" data-toggle="tooltip" title="Help-Desk"><i class="fa fa-envelope"></i></a>
+
+      <a href="#" class="w3-bar-item w3-button" data-toggle="tooltip" title="Physics"><i class="fas fa-atom"></i></a>
+      <a href="#" class="w3-bar-item w3-button" data-toggle="tooltip" title="Chemistry"><i class="fas fa-flask"></i></a>
+      <a href="/math" class="w3-bar-item w3-button" data-toggle="tooltip" title="Maths"><i class="fas fa-square-root-alt"></i></a>
+      <a href="/logout" class="w3-bar-item w3-button" data-toggle="tooltip" title="Logout"><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#title"><img class="logo" src="/math.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active dash" aria-current="page" href="#title">Maths</a>
+          </li>
+
+          <div class="pro">
+            <li class="nav-item ">
+              <a class="nav-link "><i class="fas fa-bell fa-3x "></i></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link "></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user-circle fa-3x"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/profile">My Profile</a></li>
+                <li><a class="dropdown-item" href="/logout">Logout</a></li>
+
+              </ul>
+            </li>
+
+
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="checkbox-container">
+  <form action="/module4free" method="post">
+  <div class="module-contemt">
+    <h2>4. Permutations and Combinations</h2>
+    <hr>
+    <section id="notes-formula">
+      <div class="form-check">
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+        <div class="col">
+          <h3>Notes</h3>
+          <input class="form-check-input" type="checkbox" name="cbx" value="cbx" id="flexCheckDefault7" autocomplete="off">
+
+          <iframe frameborder="0" scrolling="yes" src="https://drive.google.com/file/d/19WM1biulT-fPPdaOOE2ch36U_OP8iczM/preview" width="90%" height="350" target="_blank" ></iframe>
+          </div>
+            <div class="col">
+              <h3>Formula Center</h3>
+              <input class="form-check-input" type="checkbox" name="cbx" value="cbx" id="flexCheckDefault8" autocomplete="off">
+
+  <iframe src="https://drive.google.com/file/d/1bqZs5NsgPGoVxyJCHLZrDISbFoQdpo-B/preview" width="90%" height="350" target="_blank" ></iframe>
+            </div>
+
+  </div>
+      </div>
+
+        </section>
+<hr>
+<section id="quiz">
+  <h3>Quiz</h3>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="cbx" value="cbx" id="flexCheckDefault12" autocomplete="off">
+  <a href="/module1freequiz">Quiz</a>
+  <p>Score: <%= score %></p>
+  <p>Attempts: <%= attm %></p>
+  </div>
+
+</section>
+<hr>
+<section id="yt-links">
+  <div class="form-check">
+
+<h3>Best Youtube Faculty videos</h3>
+          <input class="form-check-input" type="checkbox" name="cbx" value="cbx" id="flexCheckDefault9">
+
+
+ <a href="https://www.youtube.com/playlist?list=PLbu_fGT0MPsuRrJKn3JvmYZSMq2GH3xv1"> 1.Permutations and Combinations by Sameer Chincholikar Sir</a><br>
+
+                <input class="form-check-input" type="checkbox" name="cbx" value="cbx" id="flexCheckDefault10" autocomplete="off">
+ <a href="https://www.youtube.com/playlist?list=PLqjFFrfKcY5zYAjjzW0jYVnPFcs4YJQeZ"> 2.Permutations and Combinations by Neha Agrawal Ma'am</a><br>
+ <input class="form-check-input" type="checkbox" name="cbx" value="cbx" id="flexCheckDefault11" autocomplete="off">
+<a href="https://www.youtube.com/playlist?list=PLmdFyQYShrjfPLdHQxuNWvh2ct666Na3z"> 3.Permutations and Combinations by Don't Memorise</a><br>
+
+
+  </div>
+
+</section>
+<hr>
+<section id="survey">
+  <h3>Survey</h3>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="cbx" value="cbx" id="flexCheckDefault13" autocomplete="off">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSddHxC2XKGZC05pBGtv9LM8LES9hdOkltcsI72yc-2qLKz3Yg/viewform?usp=sf_link" target="_blank">Survey<span style="color:#fff" >*</span></a>
+  </div>
+</section>
+<hr>
+     <a href="/studentdoubt" class="btn btn-primary">Doubt Section</a>
+	  <hr>
+     <button type="submit" class="btn btn-primary" name="Module1" value="Module1">Submit your progress</button>
+	
+	</form>
+	</div>
+	</div>
+  <br>
+  <br>
+  <br>
+  <script>
+    var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
+	$checkboxes = $("#checkbox-container :checkbox");
+	
+	$checkboxes.on("change", function(){
+	    $checkboxes.each(function(){
+		    checkboxValues[this.id] = this.checked;
+		});
+		
+		localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues))
+	});
+	
+	$.each(checkboxValues, function(key, value){
+	    $("#" + key).prop('checked', value);
+	});
+</script>
+
+ <script src= "https://code.jquery.com/jquery-3.5.1.js"> </script> 
+  <script src="https://kit.fontawesome.com/79927721c6.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

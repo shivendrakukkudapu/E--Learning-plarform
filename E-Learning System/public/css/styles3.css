@@ -1,0 +1,161 @@
+html{
+  min-height: 100%;
+  position: relative;
+}
+
+ul.b{
+	list-style-type: square;
+	padding-top: 5px;
+	font-size: 20px;
+	
+}
+
+.navbar {
+	
+	padding-top: 20px;
+	padding-bottom: 15px;
+	font-size: 15px;
+	letter-spacing: 5px;
+	background-color: #c5f2fc;
+}
+
+.navbar-brand p{
+	text-align: left;
+}
+
+.navbar-nav  li a:hover {
+    color: #1abc9c;
+}
+
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #021c22;
+	position: bottom;
+}
+
+.footer p {
+	margin-top: 30px;
+	font-size: 18px;
+  color: #fff;
+}
+
+
+.dropdown-menu{
+	height: auto;
+	width: 200px;
+	align-items: center;
+	padding: 3%;
+	margin-top: 2.5rem;
+	transform: translate(30%,0);
+}
+
+.dropdown-menu a{
+	display: block;
+	line-height: 3;
+	align-items: center;
+	text-align: center;
+	color: #6C6C6C;
+	font-size: 1.5rem;
+}
+
+.sidenav {
+	margin-top: 7%;
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.popup{
+	background: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.popupone{
+	background: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup-content{
+	height: auto;
+	width: 500px;
+	background: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.popup-contentone{
+	height: auto;
+	width: 500px;
+	background: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.close{
+	position: absolute;
+	top: -27px;
+	right: -27px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+
+
+.closeone{
+	position: absolute;
+	top: -27px;
+	right: -27px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}

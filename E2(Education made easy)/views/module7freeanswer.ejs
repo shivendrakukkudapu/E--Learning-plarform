@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/css/quiz2.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="quiz2.js"></script>
+</head>
+
+<script src= "https://code.jquery.com/jquery-3.5.1.js"> </script>
+
+<body>
+
+   
+<div class="head">
+    <div class="navbar">
+        <p class="head-quiz" style="margin-top: 5px; margin-left: 660px;margin-bottom: 5px;color: white;">Quiz Time !!! <p style="padding-top: 10px; margin-right: 200px; margin-left: 630px;color: white;">Don't Give Up You Can Do It. All The Best 😄</p></p>
+        
+
+        <!-- Button trigger modal -->
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" style="margin-right: 680px;
+    margin-top: 150px; margin-left: 720px;">
+        Module 2 Solutions
+      </button>
+      
+     
+
+      <!-- Modal -->
+	  <form action="/module7free">
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle" style="text-align: center;">Statistics and Probability</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="padding-left: 35px; padding-right: 35px;">
+            <form class="" action="/quiz" method="post">
+                <div class="popup">
+                 <div class="popup-content">
+                     <!-------------Questions Starts -->
+                 <p>1. A card is drawn from a pack of 52 cards. The probability of getting a queen of club or a king of heart is:</p>
+                
+                    <p><input type="radio" name="question1" value="25200" style="margin-right: 10px;">A. 1/13</p>
+                    <p><input type="radio" name="question1" value="21300" style="margin-right: 10px;">B. 2/13</p>
+                    <p><input type="radio" name="question1" value="24000" style="margin-right: 10px;">C. 1/26</p>
+                    <p><input type="radio" name="question1" value="210" style="margin-right: 10px;">D. 1/52</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question1r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>C. 1/26</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p>Here, n(S) = 52.
+
+                            Let E = event of getting a queen of club or a king of heart.
+                            
+                            Then, n(E) = 2.
+                            
+                            P(E) = n(E)/n(S) = 2/52 = 1/26.</p>
+                    </p>
+
+                <p>2. A bag contains 4 white, 5 red and 6 blue balls. Three balls are drawn at random from the bag. The probability that all of them are red, is:</p>
+                
+                    <p><input type="radio" name="question2" value="212" style="margin-right: 10px;">A. 1/22</p>
+                    <p><input type="radio" name="question2" value="209" style="margin-right: 10px;">B. 3/22</p>
+                    <p><input type="radio" name="question2" value="159" style="margin-right: 10px;">C. 2/91</p>
+                    <p><input type="radio" name="question1" value="201" style="margin-right: 10px;">D. 2/77</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question2r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>C. 2/91</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p><img src="/m2-2.png" style="width: 400px;"></p>
+                    </p>
+
+                <p>3. Two cards are drawn together from a pack of 52 cards. The probability that one is a spade and one is a heart, is:</p>
+                
+                    <p><input type="radio" name="question2" value="920" style="margin-right: 10px;">A. 3/20</p>
+                    <p><input type="radio" name="question2" value="825" style="margin-right: 10px;">B. 29/34</p>
+                    <p><input type="radio" name="question2" value="720" style="margin-right: 10px;">C. 47/100</p>
+                    <p><input type="radio" name="question1" value="610" style="margin-right: 10px;">D. 13/102</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question3r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>D. 13/102</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p><img src="/m2-3.png" style="width: 400px;"></p>
+                    </p>
+
+                <p>4. One card is drawn at random from a pack of 52 cards. What is the probability that the card drawn is a face card (Jack, Queen and King only)?</p>
+                
+                    <p><input type="radio" name="question2" value="42000" style="margin-right: 10px;">A. 1/13</p>
+                    <p><input type="radio" name="question2" value="48000" style="margin-right: 10px;">B. 3/13</p>
+                    <p><input type="radio" name="question2" value="50400" style="margin-right: 10px;">C. 1/4</p>
+                    <p><input type="radio" name="question1" value="47200" style="margin-right: 10px;">D. 9/52</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question4r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>B. 3/13</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p>Clearly, there are 52 cards, out of which there are 12 face cards.
+
+                            P (getting a face card) = 12/52 = 3/13.</p>
+                    </p>
+                    
+
+                <p>5. A bag contains 6 black and 8 white balls. One ball is drawn at random. What is the probability that the ball drawn is white?</p>
+                
+                    <p><input type="radio" name="question2" value="64" style="margin-right: 10px;">A. 3/4</p>
+                    <p><input type="radio" name="question2" value="1" style="margin-right: 10px;">B. 4/7</p>
+                    <p><input type="radio" name="question2" value="63" style="margin-right: 10px;">C. 1/8</p>
+                    <p><input type="radio" name="question1" value="126" style="margin-right: 10px;">D. 3/7</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question5r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>B. 4/7</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        Let number of balls = (6 + 8) = 14.
+
+                            Number of white balls = 8.
+
+                            P (drawing a white ball) = 8/14 = 4/7.</p>
+                    </p>
+
+                <p>6. Two dice are thrown simultaneously. What is the probability of getting two numbers whose product is even?</p>
+                
+                    <p><input type="radio" name="question2" value="1000200" style="margin-right: 10px;">A. 1/2</p>
+                    <p><input type="radio" name="question2" value="140020" style="margin-right: 10px;">B. 3/4</p>
+                    <p><input type="radio" name="question2" value="9800" style="margin-right: 10px;">C. 3/8</p>
+                    <p><input type="radio" name="question1" value="120960" style="margin-right: 10px;">D. 5/16</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question6r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>B. 3/4</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p><img src="/m2-6-1.png" style="width: 400px;"></p>
+                    </p>
+
+                <p>7. In a class, there are 15 boys and 10 girls. Three students are selected at random. The probability that 1 girl and 2 boys are selected, is:</p>
+                
+                    <p><input type="radio" name="question2" value="11" style="margin-right: 10px;">A. 21/46</p>
+                    <p><input type="radio" name="question2" value="11760" style="margin-right: 10px;">B. 25/117</p>
+                    <p><input type="radio" name="question2" value="10420" style="margin-right: 10px;">C. 1/50</p>
+                    <p><input type="radio" name="question1" value="None of these" style="margin-right: 10px;">D. 3/25</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question7r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>A. 21/46</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p><img src="/m2-7.png" style="width: 400px;"></p>
+                    </p>
+
+                <p>8. In a lottery, there are 10 prizes and 25 blanks. A lottery is drawn at random. What is the probability of getting a prize?</p>
+                
+                    <p><input type="radio" name="question2" value="5040" style="margin-right: 10px;">A. 1/10</p>
+                    <p><input type="radio" name="question2" value="720" style="margin-right: 10px;">B. 2/5</p>
+                    <p><input type="radio" name="question2" value="420" style="margin-right: 10px;">C. 2/7</p>
+                    <p><input type="radio" name="question1" value="None of these" style="margin-right: 10px;">D. 5/7</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question8r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>C. 2/7</p>
+                    <p><span style="color: green;">Explanation: </span><p>
+                        P (getting a prize) = 10/(10+25) = 10/35 = 2/7.
+                    </p></p>
+                    
+                <p>9. From a pack of 52 cards, two cards are drawn together at random. What is the probability of both the cards being kings?</p>
+
+                    <p><input type="radio" name="question2" value="None of these" style="margin-right: 10px;">A. 1/15</p>
+                    <p><input type="radio" name="question2" value="2" style="margin-right: 10px;">B. 25/57</p>
+                    <p><input type="radio" name="question2" value="8" style="margin-right: 10px;">C. 35/256</p>
+                    <p><input type="radio" name="question1" value="1" style="margin-right: 10px;">D. 1/221</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question9r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>D. 1/221</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p><img src="/m2-9.png" style="width: 400px;"></p>
+                    </p>
+
+                <p>10. Two dice are tossed. The probability that the total score is a prime number is:</p>
+                
+                    <p><input type="radio" name="question2" value="36" style="margin-right: 10px;">A. 1/6</p>
+                    <p><input type="radio" name="question2" value="None of these" style="margin-right: 10px;">B. 5/12</p>
+                    <p><input type="radio" name="question2" value="64" style="margin-right: 10px;">C. 1/2</p>
+                    <p><input type="radio" name="question1" value="120" style="margin-right: 10px;">D. 7/9</p>
+					<p><span style="color: red; padding-right: 10px;">Your response:</span><%= question10r %></p>
+                    <p><span style="color: green; padding-right: 10px;">Correct Option:</span>B. 5/12</p>
+                    <p><span style="color: green;">Explanation: </span>
+                        <p><img src="/m2-10.png" style="width: 400px;"></p>
+                    </p>
+                    
+                    <!----questions ends-->
+              </form>
+        </div>
+        <div class="modal-footer">
+         
+          <button type="submit" class="btn btn-primary">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+
+  <!---------------------Modal 2 starts-->
+  <!---<div class="head">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+      Module 2
+    </button>-->
+    
+    <!-- Modal -->
+    <!---<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>--->
+      <!------------Modal 2 ends-->
+    
+    
+
+  </div>
+
+  <!-- Button trigger modal -->
+
+
+    </div>
+    
+
+    
+
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

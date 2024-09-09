@@ -1,0 +1,50 @@
+<%- include("partials/header"); -%>
+<div class="container-fluid-login">
+<div class="row">
+<div class="col-lg-6">
+<div class = "login_developers">
+    <h1>For Students</h1>
+	<p>All the students who wants the best free study materials can register and login from here to make there curriculum stronger towards study.</p>
+	<div class="loginadminbtn">
+	<button id="button" class="btn btn-primary"><h4>Sign Up</h4></button>
+	</div>
+</div>
+</div>
+
+<div class="col-lg-6">
+<div class="login_students-signup">
+   <h1>Advantages For this website</h1>
+   <p>Sign up here and achieve the best study material for your JEE preparation</p>
+   <ul class="b">
+     <li>Free study materials</li>
+	 <li>Doubting sessions</li>
+	 <li>Quizzes for students</li>
+	 <li>Free best video lectures for students</li>
+	 <li>Formula book</li>
+</div>
+</div>
+</div>
+</div>
+
+<form class="" action="/teacher/signup" method="post">
+<div class="popup">
+    <div class="popup-content">
+	    <img src="close1.jpg" alt="close" class="close">
+	    <input class="form-control" type="text" placeholder="Username" name="username">
+		<input class="form-control" type="password" placeholder="Password" name="pass">
+		<button class="btn btn-primary" type="submit" name="button">Create account</button>
+	</div>
+</div>
+</form>
+
+
+<script>
+    document.getElementById("button").addEventListener("click", function(){
+	    document.querySelector(".popup").style.display="flex";
+	});
+
+	document.querySelector(".close").addEventListener("click", function(){
+	    document.querySelector(".popup").style.display="none";
+	})
+</script>
+<%- include("partials/footer"); -%>

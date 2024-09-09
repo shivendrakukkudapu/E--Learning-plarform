@@ -1,0 +1,180 @@
+body{
+  background-color:#f9f7f7;
+}
+.navbar {
+  background:#f38181;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 80px;
+  border-radius: 0 0 20px 0;
+}
+.progress{
+	margin-left: 5%;
+}
+.pro{
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+.dash{
+  font-size: 2rem;
+}
+.navbar-brand{
+  padding-bottom: 0;
+    padding-top: 0;
+}
+.logo{
+  display: inline-flex;
+  width: 125px;
+}
+.w3-sidebar{
+  background-color: #95e1d3!important;
+}
+.module-contemt{
+  padding-left: 80px;
+}
+#faculty-videos iframe{
+  width: 90%;
+  height:100%;
+  margin: 10px;
+}
+h2{
+  background-color: #fce38a;
+  font-size: 3rem;
+}
+h3{
+  color: #364f6b;
+}
+#quiz a:link{
+  background-color: #08d9d6;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#quiz a:visited {
+  background-color:#aa96da;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#quiz a:hover,#quiz a:active {
+  background-color:#fc5185 ;
+}
+#survey a:link{
+  background-color: #fc5185;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#survey a:hover {
+  background-color:#08d9d6 ;
+}
+.open-button {
+  background-color: #08d9d6;
+  color: white;
+  padding: 10px 2px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 70px;
+  border-radius: 100px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #a4ebf3;
+  font-size: 30px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccf2f4;
+  color: black
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: #351f39;
+}

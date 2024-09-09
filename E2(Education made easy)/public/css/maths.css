@@ -1,0 +1,49 @@
+body{
+  background-color:#eaffd0;
+}
+.navbar {
+  background:#f38181;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 80px;
+  border-radius: 0 0 20px 0;
+}
+.pro{
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+.dash{
+  font-size: 2rem;
+}
+.navbar-brand{
+  padding-bottom: 0;
+    padding-top: 0;
+}
+.logo{
+  display: inline-flex;
+  width: 125px;
+}
+.w3-sidebar{
+  background-color: #95e1d3!important;
+}
+#modules{
+  padding-left: 80px;
+}
+.card.h-100{
+  margin: 20px;
+}
+h5{
+  font-weight: bold;
+}
+.centered {
+  position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 2rem;
+}
+.card.h-100:hover{
+  box-shadow: 0 0 20px grey;
+}

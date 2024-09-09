@@ -1,0 +1,60 @@
+<%- include("partials/header2"); -%>
+
+<div class="sidenav">
+  <a type="submit" id="buttonmodule1" href="#">Module 1</a>
+  <a type="submit" id="moduletwoo" href="#">Module 2</a>
+</div>
+
+    <form class="" action="/quiz" name="moduleone" method="post">
+  <div class="popup">
+   <div class="popup-content">
+   <p>1. Hello ?</p>
+   <img src="close1.jpg" alt="close" class="close">
+   <p><input type="radio" name="question1" value="Yes">A. Yes</p>
+   <p><input type="radio" name="question1" value="I am fine">B. I am fine</p>
+   <p><input type="radio" name="question1" value="I am ok">C. I am ok</p>
+    <p>2. Hungry? ?</p>
+	<p><input type="radio" name="question2" value="Yes">A. Yes</p>
+   <p><input type="radio" name="question2" value="I am fine">B. I am fine</p>
+   <p><input type="radio" name="question2" value="I am ok">C. I am ok</p>
+   <button name="moduleone" value="Module1" type="submit" class="btn btn-primary">Submit</button> 
+</form>
+</div>
+</div>
+
+ <form class="" action="/quiz" name="moduletwo" method="post">
+  <div class="popupone">
+   <div class="popup-contentone">
+   <p>1. Hii are you fine ?</p>
+   <img src="close1.jpg" alt="close" id="closeone" class="closeone">
+   <p><input type="radio" name="question1" value="Yes">A. Yes</p>
+   <p><input type="radio" name="question1" value="I am fine">B. I am fine</p>
+   <p><input type="radio" name="question1" value="I am ok">C. I am ok</p>
+    <p>2. Yes I am fine? ?</p>
+	<p><input type="radio" name="question2" value="Yes">A. Yes</p>
+   <p><input type="radio" name="question2" value="I am fine">B. I am fine</p>
+   <p><input type="radio" name="question2" value="I am ok">C. I am ok</p>
+   <button name="moduletwo" value="Module2" type="submit" class="btn btn-primary">Submit</button> 
+</form>
+</div>
+</div>
+
+<script>
+    document.getElementById("buttonmodule1").addEventListener("click", function(){
+	    document.querySelector(".popup").style.display="flex";
+	});
+	
+	document.querySelector(".close").addEventListener("click", function(){
+	    document.querySelector(".popup").style.display="none";
+	});
+	document.getElementById("moduletwoo").addEventListener("click", function(){
+	    document.querySelector(".popupone").style.display="flex";
+	});
+	
+	document.querySelector(".closeone").addEventListener("click", function(){
+	    document.querySelector(".popupone").style.display="none";
+	});
+</script>
+
+
+<%- include("partials/footer1"); -%>

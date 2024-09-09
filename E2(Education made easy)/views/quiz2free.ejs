@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/css/quiz2.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<title>Quiz</title>
+<script src= "https://code.jquery.com/jquery-3.5.1.js"> </script>
+
+<body>
+
+
+<div class="head">
+    <div class="navbar">
+        <p class="head-quiz" style="margin-top: 10%; margin-left: 25%; margin-bottom: 5px;color: white; text-align : center;">Quiz Time <br>Don't Give Up You Can Do It. All The Best 😄</p>
+
+
+        <!-- Button trigger modal -->
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" style="margin-right: 40%;
+    margin-top: 10%; margin-left: 50%;">
+        Module 1
+      </button>
+
+
+
+      <!-- Modal -->
+	  <form class="" action="/module1freequiz" method="post">
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle" style="text-align: center;">Permutation and Combination</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                <div class="popup">
+                 <div class="popup-content">
+				 <div class="countdown">
+				   <p id="countdown"></p>
+				  </div>
+                     <!-------------Questions Starts -->
+                 <p>1. Out of 7 consonants and 4 vowels, how many words of 3 consonants and 2 vowels can be formed?</p>
+
+                    <p><input type="radio" name="question1" value="25200" style="margin-right: 10px;">A. 25200</p>
+                    <p><input type="radio" name="question1" value="21300" style="margin-right: 10px;">B. 21300</p>
+                    <p><input type="radio" name="question1" value="24000" style="margin-right: 10px;">C. 24000</p>
+                    <p><input type="radio" name="question1" value="210" style="margin-right: 10px;">D. 210</p>
+
+                <p>2. In a group of 6 boys and 4 girls, four children are to be selected. In how many different ways can they be selected such that at least one boy should be there?</p>
+
+                    <p><input type="radio" name="question2" value="212" style="margin-right: 10px;">A. 212</p>
+                    <p><input type="radio" name="question2" value="209" style="margin-right: 10px;">B. 209</p>
+                    <p><input type="radio" name="question2" value="159" style="margin-right: 10px;">C. 159</p>
+                    <p><input type="radio" name="question2" value="201" style="margin-right: 10px;">D. 201</p>
+
+                <p>3. In how many different ways can the letters of the word 'OPTICAL' be arranged so that the vowels always come together?</p>
+
+                    <p><input type="radio" name="question3" value="920" style="margin-right: 10px;">A. 920</p>
+                    <p><input type="radio" name="question3" value="825" style="margin-right: 10px;">B. 825</p>
+                    <p><input type="radio" name="question3" value="720" style="margin-right: 10px;">C. 720</p>
+                    <p><input type="radio" name="question3" value="610" style="margin-right: 10px;">D. 610</p>
+
+                <p>4. In how many different ways can the letters of the word 'CORPORATION' be arranged so that the vowels always come together?</p>
+
+                    <p><input type="radio" name="question4" value="42000" style="margin-right: 10px;">A. 42000</p>
+                    <p><input type="radio" name="question4" value="48000" style="margin-right: 10px;">B. 48000</p>
+                    <p><input type="radio" name="question4" value="50400" style="margin-right: 10px;">C. 50400</p>
+                    <p><input type="radio" name="question4" value="47200" style="margin-right: 10px;">D. 47200</p>
+
+                <p>5. In how many ways can a group of 5 men and 2 women be made out of a total of 7 men and 3 women?</p>
+
+                    <p><input type="radio" name="question5" value="64" style="margin-right: 10px;">A. 64</p>
+                    <p><input type="radio" name="question5" value="1" style="margin-right: 10px;">B. 1</p>
+                    <p><input type="radio" name="question5" value="63" style="margin-right: 10px;">C. 63</p>
+                    <p><input type="radio" name="question5" value="126" style="margin-right: 10px;">D. 126</p>
+
+                <p>6. In how many different ways can the letters of the word 'MATHEMATICS' be arranged such that the vowels must always come together?</p>
+
+                    <p><input type="radio" name="question6" value="1000200" style="margin-right: 10px;">A. 1000200</p>
+                    <p><input type="radio" name="question6" value="140020" style="margin-right: 10px;">B. 140020</p>
+                    <p><input type="radio" name="question6" value="9800" style="margin-right: 10px;">C. 9800</p>
+                    <p><input type="radio" name="question6" value="120960" style="margin-right: 10px;">D. 120960</p>
+
+                <p>7. There are 8 men and 10 women and you need to form a committee of 5 men and 6 women. In how many ways can the committee be formed?</p>
+
+                    <p><input type="radio" name="question7" value="11" style="margin-right: 10px;">A. 11</p>
+                    <p><input type="radio" name="question7" value="11760" style="margin-right: 10px;">B. 11760</p>
+                    <p><input type="radio" name="question7" value="10420" style="margin-right: 10px;">C. 10420</p>
+                    <p><input type="radio" name="question7" value="None of these" style="margin-right: 10px;">D. None of these</p>
+
+                <p>8. How many 3-letter words with or without meaning, can be formed out of the letters of the word, 'LOGARITHMS', if repetition of letters is not allowed?</p>
+
+                    <p><input type="radio" name="question8" value="5040" style="margin-right: 10px;">A. 5040</p>
+                    <p><input type="radio" name="question8" value="720" style="margin-right: 10px;">B. 720</p>
+                    <p><input type="radio" name="question8" value="420" style="margin-right: 10px;">C. 420</p>
+                    <p><input type="radio" name="question8" value="None of these" style="margin-right: 10px;">D. None of these</p>
+
+                <p>9. A coin is tossed 3 times. Find out the number of possible outcomes.</p>
+
+                    <p><input type="radio" name="question9" value="None of these" style="margin-right: 10px;">A. None of these</p>
+                    <p><input type="radio" name="question9" value="2" style="margin-right: 10px;">B. 2</p>
+                    <p><input type="radio" name="question9" value="8" style="margin-right: 10px;">C. 8</p>
+                    <p><input type="radio" name="question9" value="1" style="margin-right: 10px;">D. 1</p>
+
+                <p>10. In how many different ways can the letters of the word 'DETAIL' be arranged such that the vowels must occupy only the odd positions?</p>
+
+                    <p><input type="radio" name="question10" value="36" style="margin-right: 10px;">A. 36</p>
+                    <p><input type="radio" name="question10" value="None of these" style="margin-right: 10px;">B. None of these</p>
+                    <p><input type="radio" name="question10" value="64" style="margin-right: 10px;">C. 64</p>
+                    <p><input type="radio" name="question10" value="120" style="margin-right: 10px;">D. 120</p>
+
+                    <!----questions ends-->
+        </div>
+        <div class="modal-footer">
+
+          <button type="submit" name="moduleone" value="Module1" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+
+  <!---------------------Modal 2 starts-->
+  <!---<div class="head">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+      Module 2
+    </button>-->
+
+    <!-- Modal -->
+    <!---<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>--->
+      <!------------Modal 2 ends-->
+
+
+
+  </div>
+
+  <!-- Button trigger modal -->
+
+
+    </div>
+
+
+
+
+</div>
+  <script>
+     const startingMinutes = 25;
+	 let time = startingMinutes * 60;
+	 const countdownEl = document.getElementById('countdown');
+	 setInterval(updateCountdown, 1000);
+	 function updateCountdown() {
+	     const minutes = Math.floor(time / 60);
+		 let seconds = time % 60;
+		 seconds = seconds < 25 ? '0' + seconds : seconds;
+		 countdownEl.innerHTML = `${minutes}: ${seconds}`;
+	     time--;
+	 }
+   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

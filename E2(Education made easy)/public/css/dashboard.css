@@ -1,0 +1,204 @@
+.tooltip{
+  font-size: 20px;
+}
+body{
+  background-color: #ffe6e6;
+}
+.navbar {
+  background: #b088f9;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0 0 20px 0;
+}
+
+.weekhead p{
+	margin: 2rem;
+	font-size: 2rem;
+}
+.pro{
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+
+.timeel p{
+	color: #a685e2;
+	text-align: center;
+	font-size: 2rem;
+	
+}
+.rankee p{
+	color: #a685e2;
+	text-align: center;
+	font-size: 3rem;
+	margin-top: 10%;
+}
+.timee1head p{
+	color: #a685e2;
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 18%;
+}
+.dash{
+  font-size: 2rem;
+}
+.navbar-brand{
+  padding-bottom: 0px;
+    padding-top: 0px;
+    margin-left: 80px;
+    height: 75px;
+}
+.w3-sidebar{
+  background-color: #bedcfa!important;
+}
+h2{
+  margin-left: 80px;
+}
+#statistics .row{
+  padding: 2%;
+  margin-left: 80px;
+}
+#statistics .col-md-4{
+  box-shadow: 0 0 30px grey;
+  border-radius: 15px;
+  height: 400px;
+  width: 400px;
+  margin: 10px;
+  background-color: #fff;
+}
+#subjects .row{
+  margin-left: 80px;
+}
+#subjects .chemistry{
+  background-color: #38BEFD;
+}
+
+#subjects .physics{
+  background-color: #3D2CE8;
+}
+#subjects .maths{
+  background-color: #FDB909;
+}
+#subjects .maths , #subjects .physics , #subjects .chemistry {
+  border-radius: 25px;
+  padding: 3rem;
+  margin: 2rem;
+  box-shadow: 0 0 30px grey;
+}
+#subjects img{
+  width: 90%;
+}
+.physics .btn , .chemistry .btn , .maths .btn{
+  position:static;
+ transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ background-color: #fff;
+ color: black;
+ font-size: 16px;
+ padding: 12px 24px;
+ border: none;
+ cursor: pointer;
+ border-radius: 5px;
+ text-align: center;
+ margin-left: 50%;
+ margin-top: 20%;
+}
+.physics .btn:hover , .chemistry .btn:hover , .maths .btn:hover{
+background-color: #a685e2;
+color: #fff;
+}
+@media (max-width:1028px){
+  .navbar{
+    text-align: center;
+  }
+}
+
+
+
+.graphbar{
+	width: 600px;
+	height: 230px;
+	display:block;
+}
+
+.numbers{
+	color: black;
+	margin: 0;
+	padding: 0;
+	width: 50px;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.numbers li{
+	list-style: none;
+	height: 100px;
+	position: relative;
+	bottom: 80px;
+}
+
+.numbers span{
+	font-size: 15px;
+	font-weight: 600;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	left: 10px;
+}
+
+
+.bars{
+	color: black;
+	font-size: 15px;
+	font-weight: 600;
+	background: #a76ebf;
+	margin-left: 30px;
+	padding: 0;
+	display: inline-block;
+	width: 200px;
+	height: 230px;
+	box-shadow:0 0 10px 0 #a76ebf;
+	border-radius: 5px;
+}
+
+.bars li{
+	display: table-cell;
+	width: 100px;
+	height: 230px;
+	position: relative;
+}
+
+.bars span{
+	width: 100%;
+	position: absolute;
+	bottom: -50px;
+	text-align: center;
+}
+
+.bars .bar{
+	display: block;
+	background: #6ebf96;
+	width: 50px;
+	position: absolute;
+	bottom: 0;
+	margin-left: 25px;
+	text-align: center;
+	box-shadow: 0 0 10px 0 #f3988c;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.bars .bar:hover{
+	background: #43d110;
+	cursor: pointer;
+	
+}
+
+.bars .bar:before{
+	color: black;
+	content: attr(data-percentage) '%';
+	position: relative;
+	bottom: 20px;
+}
+

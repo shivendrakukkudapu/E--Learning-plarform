@@ -1,0 +1,49 @@
+<%- include("partials/header1"); -%>
+<% console.log(str); %>
+<% console.log(str.length); %>
+ <section> 
+        <h1>GeeksForGeeks</h1> 
+  
+        <!-- TABLE CONSTRUCTION-->
+        <table id='table'> 
+            <!-- HEADING FORMATION -->
+            <tr> 
+                <th>Username</th> 
+                <th>Module</th> 
+                <th>Result</th>  
+            </tr> 
+  
+            <script> 
+                $(document).ready(function () { 
+  
+                    // FETCHING DATA FROM JSON FILE 
+                    $.getJSON("student.json",  
+                            function (data) { 
+                        var student = ''; 
+  
+                        // ITERATING THROUGH OBJECTS 
+                        $.each(data, function (key, value) { 
+  
+                            //CONSTRUCTION OF ROWS HAVING 
+                            // DATA FROM JSON OBJECT 
+                            student += '<tr>'; 
+                            student += '<td>' +  
+                                value.UserName + '</td>'; 
+  
+                            student += '<td>' +  
+                                value.Module + '</td>'; 
+  
+                            student += '<td>' +  
+                                value.Result + '</td>'; 
+                            student += '</tr>'; 
+                        }); 
+                          
+                        //INSERTING ROWS INTO TABLE  
+                        $('#table').append(student); 
+                    }); 
+                }); 
+            </script> 
+    </section> 
+
+
+<%- include("partials/footer1"); -%>

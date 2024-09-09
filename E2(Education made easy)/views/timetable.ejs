@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Timetable and Todos</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/timetable.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="dashboard-block">
+    <div class="w3-sidebar w3-bar-block w3-sand w3-xxlarge" style="width:70px">
+      <a href="/dashboard" class="w3-bar-item w3-button" data-toggle="tooltip" title="Dashboard"><i class="fa fa-home"></i></a>
+      <a href="/timetable" class="w3-bar-item w3-button" data-toggle="tooltip" title="Timetable and Todos"><i class="fa fa-table"></i></a>
+      <a href="#" class="w3-bar-item w3-button" data-toggle="tooltip" title="Help-Desk"><i class="fa fa-envelope"></i></a>
+
+      <a href="#" class="w3-bar-item w3-button" data-toggle="tooltip" title="Physics"><i class="fas fa-atom"></i></a>
+      <a href="#" class="w3-bar-item w3-button" data-toggle="tooltip" title="Chemistry"><i class="fas fa-flask"></i></a>
+      <a href="/math" class="w3-bar-item w3-button" data-toggle="tooltip" title="Maths"><i class="fas fa-square-root-alt"></i></a>
+      <a href="/logout" class="w3-bar-item w3-button" data-toggle="tooltip" title="Logout"><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#title"><img class="logo" src="/Elogo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active dash" aria-current="page" href="#title">Timetable and Todos</a>
+          </li>
+
+          <div class="pro">
+            <li class="nav-item ">
+              <a class="nav-link "><i class="fas fa-bell fa-3x "></i></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link "></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user-circle fa-3x"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/dashboard">My Profile</a></li>
+                <li><a class="dropdown-item" href="/logout">Logout</a></li>
+
+              </ul>
+            </li>
+
+
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 style="padding-left:80px">Weekly Timetable</h1>
+
+
+  <div class="calendar">
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=bGJzcHJvamVjdDEyMzQ1NkBnbWFpbC5jb20&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%230B8043&amp;title=Education%20Made%20Easy%20Calendar" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
+  <hr>
+
+<section id="todos">
+  <div id="myDIV" class="header">
+    <h2 style="margin:5px">To Do Lists</h2>
+    <input type="text" id="myInput" placeholder="Jobs to do...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+
+  <ul id="myUL">
+    <li>Physics PYQs</li>
+    <li class="checked">Maths Probability Homework Sums</li>
+    <li>Chemistry Quiz</li>
+    <li>Doubts On PNC</li>
+  </ul>
+
+</section>
+<div class="callout">
+  <div class="callout-header">About This Section</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container">
+    <p>Timetable will be shared on this Google Calendar. You can also add this to your own Google account to receive notifications. Below is a todos section which contains personalised suggestions and also allows you to create your own todos. So if you have completed your job , just click on the job to strike it out. So are you ready to strike em all out??😂😅</p>
+  </div>
+</div>
+<script src="/todo.js" charset="utf-8"></script>
+
+  <script src="https://kit.fontawesome.com/79927721c6.js" crossorigin="anonymous"></script>
+  </body>
+</html>

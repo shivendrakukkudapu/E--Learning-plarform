@@ -1,0 +1,165 @@
+#title {
+  background: rgb(136,100,226);
+  background: linear-gradient(230deg, rgba(136,100,226,1) 0%, rgba(167,132,234,1) 100%);
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.container-fluid {
+  padding: 0 5% 3%;
+}
+
+body {
+  font-family: "Montserrat-Black";
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+#navbarNav{
+  padding:0 5% 0 15%;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 13px;
+}
+
+.nav-link {
+  font-family: "Montserrat-Light";
+  font-size: 1.2rem;
+}
+.signinup{
+  margin: 10px 5px 0 ;
+}
+.signinin{
+  margin: 10px 5px 0 ;
+}
+.title-image {
+  width: 40%;
+  position: absolute;
+  left:52%;
+  animation: mymove 5s;
+}
+@keyframes mymove {
+  from {top:300px; }
+  to {top:125px;}
+}
+.navbar-dark{
+  padding-bottom: 20px;
+}
+.title-content{
+  padding-left: 79px;
+  padding-bottom: 175px;
+  padding-top: 100px;
+  padding-right: 25px;
+  font-size: 25px;
+}
+#aboutus{
+  background-color: #CFB79D;
+  position: relative;
+  display: inline-block;
+  padding: 0 50px;
+}
+.scholar-image{
+  width: 80%;
+}
+.aboutusinfo{
+  padding-top: 25px;
+}
+.carouselimages{
+  height: 700px;
+}
+.pricing-column {
+  padding: 1% 0.5%;
+}
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+  padding-top: 50px;
+    padding-bottom: 50px;
+}
+#pricing .row{
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: auto;
+}
+.card-body p{
+  margin-bottom: 5px;
+}
+h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.card-header{
+  background-color: #b088f9;
+}
+#press{
+  text-align: center;
+  background-color: #ffe6e6;
+  padding-bottom: 20px;
+}
+footer,#contact {
+  text-align: center;
+  padding: 2% 15%;
+  background-color: #6155a6;
+  color: #fff;
+}
+.social-icon {
+  margin: 20px 10px;
+}
+.hlink{
+  color: #ffe6e6;
+}
+.hlink:hover{
+  color: #fff;
+}
+.aboutusimage{
+  text-align: center;
+}
+#aboutus h2{
+  padding: 3% 0 3%;
+}
+@media (max-width:1028px) {
+  #title {
+    text-align: center;
+  }
+body{
+  overflow-x: scroll;
+}
+  .title-image {
+    position: static;
+  }
+  #press img{
+    width: 80%;
+  }
+  #pricing .row{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: auto;
+  }
+  .carouselimages{
+    height: 400px;
+  }
+  .title-content{
+    padding-left: 25px;
+    padding-bottom:50px;
+    padding-top: 50px;
+    padding-right: 25px;
+  }
+}
